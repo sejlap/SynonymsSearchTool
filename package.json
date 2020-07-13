@@ -10,8 +10,9 @@
   "scripts": {
     "watch": "nodemon app.js",
     "start": "node app.js",
+    "start2": "react-scripts start",
     "test": "mocha",
-    "heroku-postbuild":"cd search_tool && npm install && react-scripts start"
+    "heroku-postbuild":"cd search_tool && npm install && npm start2"
   },
   "author": "",
   "license": "ISC",
