@@ -24,8 +24,7 @@ class LinkedList {
         // creates a new node 
         var node = new Node(element); 
         var current; 
-        // if list is Empty add the 
-        // element and make it head 
+        // if list is Empty add the element and make it head 
         if (this.head == null) 
             this.head = node; 
         else { 
