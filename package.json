@@ -7,7 +7,7 @@
     "watch": "nodemon app.js",
     "build": "cd search_tool && npm run build",
     "install-client": "cd search_tool && npm install",
-    "heroku-postbuild":  "npm run install-client && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "client": "cd search_tool && npm start",
     "start": "node app.js",
     "test": "mocha"
@@ -31,5 +31,17 @@
     "should": "^13.2.3",
     "stack-lifo": "^0.1.6",
     "supertest": "^4.0.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sejlap/SynonymsSearchTool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sejlap/SynonymsSearchTool/issues"
+  },
+  "homepage": "https://github.com/sejlap/SynonymsSearchTool#readme"
 }
