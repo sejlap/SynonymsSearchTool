@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(blue.jpg); 
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  #meni {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .meni2 {
+    display: inline;
+  }
+  .link-stil {
+    margin-right: 2%;
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+  }
+ 
+  a:hover {
+    color: orangered;
+  }
+  .poruka{
+      color: white;
+      padding-left: 90px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 27px;
+      text-decoration: solid;
+  }
+  #naslov{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#prva{
+    margin-left: 30%;
+    margin-top: 80px;
+    padding-bottom: 200px;
+    color: white   
+}
+
+
+#forma{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.bar{
+  width: 75%;
+  margin-bottom: 15px;
+  background-color: beige;
+}
+#save{
+  width: 180px;
+  margin-top: 20px;
+  margin-right: 230px;
+  margin-bottom: 50px;
+}
+#search1{
+  width: 180px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+#add{
+  margin-left: 520px;
+  margin-top: -100px;
+  width: 200px;
+  height: 45px;    
+}
+#tekst{
+  margin-top: 100px;
+}
+#bar{
+  width: 60%;
+  margin-bottom: 15px;
+  background-color: beige;
+}
+#search{
+  width:150px;
+  margin-top: 20px;
+  margin-right: 150px;
+}
+
+.label{
+  padding-bottom: 10px;
+}

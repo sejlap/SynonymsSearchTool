@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon app.js",
+    "build": "cd search_tool && npm run build",
+    "install-client": "cd search_tool && npm install",
+    "heroku-postbuild":  "npm run install-client && npm run build",
+    "client": "cd search_tool && npm start",
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "binary-search-tree": "^0.2.6",
+    "collections": "^5.1.11",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-router": "0.0.1",
+    "hashmap": "^2.4.0",
+    "linked-list": "^2.1.0",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4",
+    "npm-watch": "^0.6.0",
+    "queue": "^6.0.1",
+    "request": "^2.88.2",
+    "should": "^13.2.3",
+    "stack-lifo": "^0.1.6",
+    "supertest": "^4.0.2"
+  }
+}
