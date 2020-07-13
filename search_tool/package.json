@@ -2,11 +2,10 @@
   "name": "search_tool",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/sejlap/SynonymsSearchTool",
   "proxy": "http://localhost:5000",
   "engines": {
-    "npm": "5.7.1",
-    "node": "9.5.0"
+    "npm": "6.14.4",
+    "node": "12.3.1"
   },
   "dependencies": {
     "axios": "^0.19.2",

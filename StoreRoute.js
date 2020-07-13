@@ -74,7 +74,7 @@ router.get("/", cors(), (req, res) => {
 });
 
 //good function for finding middle element for binary search 
-const middle = (start, last) => {
+/*const middle = (start, last) => {
     if (start === null) {
         return null;
     }
@@ -93,7 +93,7 @@ const middle = (start, last) => {
 
     return slow;
 };
-
+*/
 //Binary search O(log n) complexity
 //For binary search we need a sorted list but this is a list with strings and sorting is different
 /*function sortFactory(prop) {
@@ -138,10 +138,11 @@ router.get("/:searchBar", cors(), (req, res) => {
     let vratiSinonim='';
     let pronadjeno=0;
     res.setHeader('Content-Type', 'application/json');  
-    if(result.size==0) res.send("First you have to add synonym");
+if(result.size!=0){
     var it=result.head; //iterator on the start 
     let novi=[];
     while(1){
+        if(it==null) break;
         novi= it.element.synonym.split(" "); //in the case that synonym is more than one word to enable lookups
         if(rijec===it.element.word) {
             pronadjeno=1;
@@ -155,6 +156,7 @@ router.get("/:searchBar", cors(), (req, res) => {
      it=it.next;
      if(it==null) break;
     }
+}
     if(result.size==0) res.send("First you have to add synonym")
     else if(pronadjeno==1 && rijec!="") res.send(vratiSinonim); 
     else { vratiSinonim=""; res.send('Not exists'); }

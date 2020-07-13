@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
+
 const bodyParser = require("body-parser");
+const path= require('path');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // init express
@@ -21,7 +23,10 @@ const sinonimiRuta = require("./StoreRoute.js");
 app.use("/sinonimi", sinonimiRuta);
 
 if(process.env.NODE_ENV ==='production'){
-    app.use(express.static('search_tool/build'))
+    app.use(express.static('search_tool/build'));
+    app.get('*',(req,res) => {
+      res.sendFile(path.join(__dirname, 'search_tool', 'build', 'index.html'));
+    });
 }
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
