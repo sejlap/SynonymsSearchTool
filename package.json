@@ -11,7 +11,7 @@
     "watch": "nodemon app.js",
     "start": "node app.js",
     "test": "mocha",
-    "heroku-postbuild":"cd search_tool && npm install && npm start"
+    "heroku-postbuild":"cd search_tool && npm install "
   },
   "author": "",
   "license": "ISC",
